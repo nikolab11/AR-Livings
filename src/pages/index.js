@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
+import Image from "next/image";
 
 export default function Home() {
   const [animate, setAnimate] = useState(true);
@@ -30,12 +31,29 @@ export default function Home() {
           <div className={`${styles.backgroundImage} ${animate}`} />
         ) : null}
         <div className={styles.textContainer}>
+          <div className={styles.logoContainer}>
+            <Image
+              className={styles.logo}
+              alt="logo"
+              src={require("../../public/logo.png")}
+            />
+          </div>
           <h2 className={styles.name}>AR Living</h2>
           <h4 className={styles.description}>
             Erleben Sie das BESTE von zwei Welten <br /> LIFESTYLE & SERVICE{" "}
             <br /> unter einem Dach
           </h4>
           <h1 className={styles.comingSoon}>COMING SOON</h1>
+          <h5
+            className={styles.link}
+            onClick={() =>
+              window.open(
+                "mailto:reservations@arlivings.com?subject=''&body=''%20goes%20here"
+              )
+            }
+          >
+            reservations@arlivings.com
+          </h5>
         </div>
       </main>
     </>
