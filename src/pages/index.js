@@ -54,6 +54,15 @@ export default function Home() {
           >
             reservations@arlivings.com
           </h5>
+
+          <a className={styles.download} href="flyer.pdf" download>
+            <p className={styles.downloadText}>Download our flyer</p>
+            <Image
+              className={styles.downloadIcon}
+              alt="download"
+              src={require("../../public/pdf.png")}
+            />
+          </a>
         </div>
       </main>
     </>
