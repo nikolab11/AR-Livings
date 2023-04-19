@@ -1,0 +1,105 @@
+.container {
+  width: 100vw;
+  background-color: var(--main-color);
+  z-index: 99999;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.reservedContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  text-align: center;
+  background-color: #00474b;
+  color: #d8d6d6;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.developedBy {
+  margin: 0 10px;
+  color: aqua;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.right {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 20%;
+  justify-content: center;
+  padding-left: 5%;
+  padding-top: 2%;
+}
+
+.menu {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  list-style: none;
+}
+
+.menuItem {
+  font-size: 17px;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.followSection {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.followIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.followIcon {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.followIcon:hover {
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 1150px) {
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .reservedContainer {
+    font-size: 9px;
+    height: 30px;
+  }
+  .developedBy {
+    font-size: 8px;
+  }
+
+  .right {
+    width: 100%;
+    justify-content: space-between;
+    padding: 5%;
+  }
+
+}

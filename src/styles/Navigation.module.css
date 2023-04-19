@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 999;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(104, 103, 103, 0.4);
+}
+
+.linkContainer {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  height: 28px;
+}
+
+.link:hover {
+  color: var(--main-color);
+  border-bottom: 3px solid;
+  padding-bottom: 5px;
+}
+
+.button {
+  padding: 15px 30px !important;
+  color: black;
+  background-color: #d5c9a3 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-size: 14px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  color: #fff !important;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.phoneContainer {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 7px;
+}
+
+.phone {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.animation {
+  animation: slideDown linear 600ms;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.followIcons {
+  display: flex;
+  align-items: center;
+}
+.followIcon {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.followIcon:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 1150px) {
+  /*   .animation {
+    position: relative;
+    animation: none;
+  } */
+
+  .button {
+    position: absolute;
+    right: 70px;
+    padding: 15px 25px !important;
+    font-size: 12px !important;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
