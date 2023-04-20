@@ -33,6 +33,16 @@ const Navigation = () => {
 
       <div className={styles.right}>
         <>
+          <h4
+            className={styles.mail}
+            onClick={() =>
+              window.open(
+                "mailto:email@example.com?subject=Subject&body=Body%20goes%20here"
+              )
+            }
+          >
+            reservations@arlivings.com
+          </h4>
           <div className={styles.followIcons}>
             <a className={styles.download} href="flyer.pdf" download>
               <Image
